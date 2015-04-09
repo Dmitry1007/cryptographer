@@ -24,6 +24,7 @@ message = "This is my secret"
 # do your encryption here
 
 puts encrypted_message
+
 Then a decrypt.rb like:
 
 key = 13
@@ -33,39 +34,60 @@ encrypted_message = "Guvf vf zl frperg"
 # do your decryption here
 
 puts message
+
+
 Object-Based
 
 If you're comfortable with creating classes, start with this:
 
 class Encryptor
+  
   # Your code here
+
 end
 
 class Decryptor
+  
   # Your code here
+
 end
 
 class EncryptionEngine
+ 
   # Your code here
+
 end
+
 Which gets used like this:
 
 engine = EncryptionEngine.new
+
 output = engine.encrypt("My Message")
+
 puts output  # outputs "Zl Zrffntr"
+
 output2 = engine.decrypt("Zl Zrffntr")
+
 puts output2 # outputs "My Message"
+
 And of course you'll be using TDD. Maybe you start with:
 
 require 'minitest/autorun'
 
 class EncryptionEngineTest < Minitest::Test
+
   def test_it_encrypts_using_rot13
+
     engine = EncryptionEngine.new
+
     output = engine.encrypt("My Message")
+
     assert_equal "Zl Zrffntr", output
+
   end
+
 end
+
 Extensions
 
 Flexible Rotation
