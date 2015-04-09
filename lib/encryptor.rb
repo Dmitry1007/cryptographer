@@ -14,7 +14,5 @@ class Encryptor
         CHAR_MAP[num-13]
       end
     end.join
-
   end
-
 end

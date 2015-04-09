@@ -14,6 +14,5 @@ CHAR_MAP = ("a".."z").to_a
         CHAR_MAP[num-13]
       end
     end.join
-
   end
 end

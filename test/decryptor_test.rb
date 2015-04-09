@@ -36,5 +36,4 @@ class DecryptorTest < Minitest::Test
     assert_equal "ab ", decryptor.decrypt("no ")
     assert_equal "ab yz", decryptor.decrypt("no lm ")
   end
-
 end
